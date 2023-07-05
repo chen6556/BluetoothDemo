@@ -62,7 +62,7 @@ Bluetooth::~Bluetooth()
     }
     if (_socket != nullptr)
     {
-        reset_socket();
+        _socket->disconnectFromService();
     }
 }
 

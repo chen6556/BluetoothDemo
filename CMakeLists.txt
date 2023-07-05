@@ -8,6 +8,7 @@ if (MSVC)
     # 设置 msvc 输入代码编码格式为 utf-8
     add_compile_options("$<$<C_COMPILER_ID:MSVC>:/utf-8>")
     add_compile_options("$<$<CXX_COMPILER_ID:MSVC>:/utf-8>")
+    add_compile_options("/arch:AVX2")
 endif()
 
 set(CMAKE_AUTOUIC ON)
